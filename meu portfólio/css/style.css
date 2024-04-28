@@ -10,7 +10,8 @@
 
 /* BODY */
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100vh;
     background-color: #13131F;
@@ -18,10 +19,315 @@ html, body {
     scroll-behavior: smooth;
 }
 
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #13131F;
+    width: 100%;
+    min-height: 100vh;
+}
+
 /* HEADER */
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: #13131F;
+    border-bottom: 1px solid #2eb8f8;
+    border-image-slice: 1;
+    z-index: 1;
+    transition: background-color 0.5s ease-in-out;
+    position: fixed;
+}
+
+/* HEADER MUDA DE COR SCROLL */
+
+header.scrolled {
+    background-color: #2eb8f8;
+    border-bottom: 1px solid #ffffff;
+}
+
+header.scrolled a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    transition: 0.9s;
+}
+
+header.scrolled i {
+    color: #ffffff;
+}
+
+header.scrolled #button span {
+    background-color: #ffffff;
+}
+
+/* ÍCONE MENU HAMBURGUER */
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0;
+    background-color: transparent;
+    gap: 6px;
+}
+
+#button-burger-menu:hover {
+    cursor: pointer;
+}
+
+#button-burger-menu span {
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+#button-burger-menu.active span:nth-child(2) {
+    opacity: 0;
+    width: 0;
+}
+
+#button-burger-menu.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#button-burger-menu.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* LISTA DO MENU */
+
+.menu-lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.link-menu-lista {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* PROFILE */
+
+.profile-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    width: 50%;
+    height: 600px;
+    min-height: 100vh;
+    padding-left: 80px;
+}
+
+.profile-name h1 {
+    font-size: 45px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.profile-name h2 {
+    font-size: 45px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    color: #24abf2; 
+}
+
+.profile-name  h3 {
+    font-size: 35px;
+    color: #828282;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+
+h3::after {
+    content: '|';
+    opacity: 0;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.profile-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 600px;
+    min-height: 100vh;
+    padding-right: 100px;
+}
 
 .profile-photo img {
-    width: 285px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* EFEITO IMAGEM FLUTUANDO */
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+}
+
+/* SOBRE DESCRIÇÃO */
+
+.about {
+    /* SEÇÃO */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #13131F;
+    width: 100%;
+    height: 450px;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+.about h1 {
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+.about p {
+    padding-left: 14%;
+    padding-right: 14%;
+    font-size: 25px;
+    color: #828282;
+}
+
+/* HABILIDADES */
+
+.my-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.skills-h1 {
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    height: 100;
+    flex-wrap: wrap;
+    padding: 3%;
+    margin-top: 3rem;
+}
+
+.skills-div {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 130px;
+    height: 120px;
+    background-color: #272626;
+    border-top-left-radius: 20px;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #2e337a, #004cd8, #0086f3);
+    border-image-slice: 1;
+    box-sizing: border-box;
+    transition: 0.7s;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.skills-div h1 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.skills-div p {
+    font-size: 15px;
+    color: #66A5FF;
+}
+
+.skills-div:hover {
+    transform: scale(1.1);
+}
+
+/* SETA VOLTAR */
+
+#back-arrow-bar {
+    color: #ffffff;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+}
+
+/* CORES BARRA DE ROLAGEM */
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #24abf2;
+    border-radius: 0px;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #13131F;
 }
