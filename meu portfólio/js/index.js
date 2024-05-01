@@ -173,28 +173,7 @@ divProjectsSite.addEventListener('mouseout', function () {
     button2.style.backgroundColor = "transparent";
 });
 
-/* VOLTAR AO TOPO */
 
-const voltar = document.getElementById("footer-arrow-back");
-
-    window.addEventListener("scroll", function () {
-        const scrollTop = document.documentElement.scrollTop;
-
-        if (scrollTop > 1800) {
-            voltar.style.display = "block";
-        } else {
-            voltar.style.display = "none";
-        }
-    });
-
-    voltar.addEventListener("click", function (e) {
-        e.preventDefault();
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    });
 
 /* SCROLL 1 */
 
@@ -212,36 +191,3 @@ const elements1 = document.querySelectorAll('.hidden')
 
 elements1.forEach((element) => myObserver.observe(element))
 
-
-/* SCROLL 2 */
-
-
-const myObserver1 = new IntersectionObserver((entries) => {
-    entries.forEach( (entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show1')
-        } else {
-            entry.target.classList.remove('show1')
-        }
-    })
-})
-
-const elements2 = document.querySelectorAll('.hidden1')
-
-elements2.forEach((element) => myObserver1.observe(element))
-
-/* SCROLL 3 */
-
-const myObserver2 = new IntersectionObserver((entries) => {
-    entries.forEach( (entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show2')
-        } else {
-            entry.target.classList.remove('show2')
-        }
-    })
-})
-
-const elements3 = document.querySelectorAll('.hidden2')
-
-elements3.forEach((element) => myObserver2.observe(element))

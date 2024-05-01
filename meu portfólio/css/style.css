@@ -16,7 +16,6 @@ body {
     width: 100%;
     height: 100vh;
     background-color: #13131F;
-    transition: 0.3s;
     scroll-behavior: smooth;
 }
 
@@ -29,61 +28,18 @@ section {
     min-height: 100vh;
 }
 
-/* SCROLL 1 */
-
 .hidden{
     opacity: 0;
-    filter: blur(3px);
-    transform: translateY(150px);
-    transition: 3s;
+    filter: blur(4px);
+    transform: translateX(-17%);
+    transition: all 2.5s ease-in-out;
 }
 
 .show{
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-    transition: 3s;
-}
-
-/* SCROLL 2 */
-
-.hidden1 {
-    opacity: 0;
-    filter: blur(3px);
-    transform: translateY(150px);
-    transition: all 4s ease-in-out;
-}
-
-.show1 {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-    transition: all 4s ease-in-out;
-}
-
-/* SCROLL 3 */
-
-.hidden2 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    opacity: 0;
-    filter: blur(3px);
-    transform: translateY(150px);
-    transition: 3s;
-    width: 100%;
-    height: 150px;
-}
-
-.show2 {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-    transition: 3s;
-    width: 100%;
-    height: 150px;
-    color: #ffffff;
-    font-size: 30px;
+    transition: all 2.5s ease-in-out;
 }
 
 /* HEADER */
@@ -361,6 +317,8 @@ h3::after {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    height: 450px;
 }
 
 /* CAIXA 1 */
@@ -509,31 +467,9 @@ h3::after {
     font-family: 'DM Sans', sans-serif;
 }
 
-/* FOOTER */
-
-#footer-name{
-    font-size: 40px;
-    color: #ffffff;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-}
-
-#footer-arrow {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 2rem;
+footer {
     width: 100%;
-    height: 50px;
-}
-
-#footer-arrow-back {
-    color: #ffffff;
-    font-size: 40px;
-    cursor: pointer;
-    display: none;
-    position: fixed;
-    bottom: 160px;
-    right: 40px;
+    height: 300px;
 }
 
 /* CORES BARRA DE ROLAGEM */
