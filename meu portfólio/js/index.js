@@ -191,3 +191,45 @@ const elements1 = document.querySelectorAll('.hidden')
 
 elements1.forEach((element) => myObserver.observe(element))
 
+
+/* VOLTAR AO TOPO */
+
+const voltar = document.getElementById("voltar");
+
+    window.addEventListener("scroll", function () {
+        const scrollTop = document.documentElement.scrollTop;
+
+        if (scrollTop > 1800) {
+            voltar.style.display = "block";
+        } else {
+            voltar.style.display = "none";
+        }
+    });
+
+    voltar.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+
+/* MENU HAMBURGUER */
+
+/* PROJETO MARIO BROS */
+
+/* PROJETO BARBEARIA */
