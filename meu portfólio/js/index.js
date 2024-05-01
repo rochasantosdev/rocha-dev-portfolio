@@ -86,53 +86,96 @@ setTimeout(() => {
 
 /* FUNÇÃO PROJETOS DIV QUE SE ABRE */
 
+/* CAIXA 1 */
 
-const primeiradiv = document.getElementById("primeiradiv");
-const segundadiv = document.getElementById("segundadiv");
-const button5 = document.getElementById("button");
-const pai = document.getElementById("pai");
+const projectsServices = document.getElementById("projects-services");
+const projectsInformation = document.getElementById("projects-information");
+const button1 = document.getElementById("button1");
+const divProjects = document.getElementById("div-projects");
 
 
 
-
-primeiradiv.addEventListener('mouseover', function () {
-    segundadiv.style.top = "0px";
-    segundadiv.style.opacity = "1";
+projectsServices.addEventListener('mouseover', function () {
+    projectsInformation.style.top = "0px";
+    projectsInformation.style.opacity = "1";
 });
 
 
-segundadiv.addEventListener('mouseover', function () {
-    segundadiv.style.top = "0px";
-    segundadiv.style.opacity = "1";
+projectsInformation.addEventListener('mouseover', function () {
+    projectsInformation.style.top = "0px";
+    projectsInformation.style.opacity = "1";
 });
 
-segundadiv.addEventListener('mouseout', function () {
-    segundadiv.style.top = "-25%";
-    segundadiv.style.opacity = "0";
+projectsInformation.addEventListener('mouseout', function () {
+    projectsInformation.style.top = "-25%";
+    projectsInformation.style.opacity = "0";
 });
 
 
-primeiradiv.addEventListener('mouseout', function () {
-    segundadiv.style.top = "-25%";
-    segundadiv.style.opacity = "1";
+projectsServices.addEventListener('mouseout', function () {
+    projectsInformation.style.top = "-25%";
+    projectsInformation.style.opacity = "1";
 });
 
-pai.addEventListener('mouseover', function () {
-    button5.style.transform = "scale(1.3)";
-    button5.style.transition = "all 2s ease-in-out";
-    button5.style.backgroundColor = "#24abfa";
+divProjects.addEventListener('mouseover', function () {
+    button1.style.transform = "scale(1.3)";
+    button1.style.transition = "all 2s ease-in-out";
+    button1.style.backgroundColor = "#24abfa";
 });
 
-pai.addEventListener('mouseout', function () {
-    button5.style.transition = "none";
-    button5.style.transform = "none";
-    button5.style.backgroundColor = "transparent";
+divProjects.addEventListener('mouseout', function () {
+    button1.style.transition = "none";
+    button1.style.transform = "none";
+    button1.style.backgroundColor = "transparent";
 });
 
+
+/* CAIXA 2 */
+
+
+const projectsServicesSite = document.getElementById("projects-services-site");
+const projectsInformationSite = document.getElementById("projects-information-site");
+const button2 = document.getElementById("button2");
+const divProjectsSite = document.getElementById("div-projects-site");
+
+
+projectsServicesSite.addEventListener('mouseover', function () {
+    projectsInformationSite.style.top = "0px";
+    projectsInformationSite.style.opacity = "1";
+});
+
+
+projectsInformationSite.addEventListener('mouseover', function () {
+    projectsInformationSite.style.top = "0px";
+    projectsInformationSite.style.opacity = "1";
+});
+
+projectsInformationSite.addEventListener('mouseout', function () {
+    projectsInformationSite.style.top = "-25%";
+    projectsInformationSite.style.opacity = "0";
+});
+
+
+projectsServicesSite.addEventListener('mouseout', function () {
+    projectsInformationSite.style.top = "-25%";
+    projectsInformationSite.style.opacity = "1";
+});
+
+divProjectsSite.addEventListener('mouseover', function () {
+    button2.style.transform = "scale(1.3)";
+    button2.style.transition = "all 2s ease-in-out";
+    button2.style.backgroundColor = "#24abfa";
+});
+
+divProjectsSite.addEventListener('mouseout', function () {
+    button2.style.transition = "none";
+    button2.style.transform = "none";
+    button2.style.backgroundColor = "transparent";
+});
 
 /* VOLTAR AO TOPO */
 
-const voltar = document.getElementById("back-arrow-bar");
+const voltar = document.getElementById("footer-arrow-back");
 
     window.addEventListener("scroll", function () {
         const scrollTop = document.documentElement.scrollTop;
@@ -152,3 +195,53 @@ const voltar = document.getElementById("back-arrow-bar");
             behavior: "smooth",
         });
     });
+
+/* SCROLL 1 */
+
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach( (entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
+        }
+    })
+})
+
+const elements1 = document.querySelectorAll('.hidden')
+
+elements1.forEach((element) => myObserver.observe(element))
+
+
+/* SCROLL 2 */
+
+
+const myObserver1 = new IntersectionObserver((entries) => {
+    entries.forEach( (entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show1')
+        } else {
+            entry.target.classList.remove('show1')
+        }
+    })
+})
+
+const elements2 = document.querySelectorAll('.hidden1')
+
+elements2.forEach((element) => myObserver1.observe(element))
+
+/* SCROLL 3 */
+
+const myObserver2 = new IntersectionObserver((entries) => {
+    entries.forEach( (entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show2')
+        } else {
+            entry.target.classList.remove('show2')
+        }
+    })
+})
+
+const elements3 = document.querySelectorAll('.hidden2')
+
+elements3.forEach((element) => myObserver2.observe(element))
