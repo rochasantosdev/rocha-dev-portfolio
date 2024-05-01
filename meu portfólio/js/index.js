@@ -199,7 +199,7 @@ const voltar = document.getElementById("voltar");
     window.addEventListener("scroll", function () {
         const scrollTop = document.documentElement.scrollTop;
 
-        if (scrollTop > 1800) {
+        if (scrollTop > 2200) {
             voltar.style.display = "block";
         } else {
             voltar.style.display = "none";
