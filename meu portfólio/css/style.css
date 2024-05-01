@@ -267,8 +267,8 @@ h3::after {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
-    width: 80%;
+    gap: 60px;
+    width: 90%;
     height: 400px;
 }
 
@@ -577,10 +577,10 @@ h3::after {
 }
 
 
-/* MEDIA QUERIES 
+/* MEDIA QUERIES */
 
 
-@media screen and (min-width: 1000px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     
     section {
         display: flex;
@@ -789,12 +789,13 @@ h3::after {
         border-image-slice: 1;
         border-bottom-width: 3px;
         border-bottom-style: solid;
-        background-image: url('/Users/DIL-BLACK/Documents/portfólio/rocha-dev-portfolio/meu portfólio/img/super-mario.png');
+        background-image: url('/Users/DIL-BLACK/Documents/portfólio/rocha-dev-portfolio/meu portfólio/img/site-barbearia.png');
         background-size: cover;
         background-position: center;
         position: relative;
         z-index: 1;
     }
+
     
     #projects-information {
         display: flex;
@@ -934,5 +935,3 @@ h3::after {
     }
 
 }
-
-*/
