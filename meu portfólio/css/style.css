@@ -493,18 +493,18 @@ h3::after {
     display: none;
 }
 
-/* SERVIÇOES */
+/* SERVIÇOS */
 
 #services {
     width: 100%;
-    height: 75vh;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.services-h1 {
+#services-h1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -519,11 +519,18 @@ h3::after {
     font-size: 25px;
 }
 
+#services-caixa-home h1{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif; 
+}
+
 #services span {
     color: #24abfa;
 }
 
-.services-home {
+#services-home {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -531,26 +538,28 @@ h3::after {
     height: 400px;
 }
 
-.services-div {
+#services-div {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.services-div h4 {
+#services-div h4 {
     color: #ffffff;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
-.gradient-line {
+#gradient-line {
     width: 530px;
     height: 2px;
     background: linear-gradient(to right, #76c0d3, #3296c4, #004cd8);
     margin: 20px;
 }
+
+/* FOOTER */
 
 #rights {
     display: flex;
@@ -575,8 +584,8 @@ h3::after {
     cursor: pointer;
     display: none;
     position: fixed;
-    bottom: 100px;
-    right: 40px;
+    bottom: 30px;
+    right: 15px;
 }
 
 
@@ -626,23 +635,34 @@ h3::after {
 
     header {
         display: flex;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         height: 70px;
         background-color: #13131F;
         border-bottom: 1px solid #2eb8f8;
         border-image-slice: 1;
-        z-index: 0;
-        position: relative;
-    }
-
-    .burger-menu {
-        display: block;
-        padding-left: 50px;
     }
 
     .menu-lista {
         display: none;
+    }
+
+    .menu-lista-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    }
+    
+    .menu-lista-header {
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        color: #ffffff;
+        cursor: pointer;
+        font-weight: 500;
     }
 
     /* PROFILE */
@@ -957,27 +977,97 @@ h3::after {
         font-family: 'DM Sans', sans-serif;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /* SERVIÇOS */
 
     #services {
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    
+    #services-caixa-home {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
+        width: 310px;
+        height: 100px;
     }
 
-    #rights {
-        display: none;
+    #services-caixa-home h1{
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'DM Sans', sans-serif;
+        padding-left: 7%;
+        padding-right: 7%;
+      
     }
+
+    #services span {
+        color: #24abfa;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    #services-home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 440px;
+    }
+
+    #services-home img { 
+        width: 50%;
+    }
+
+    #services-div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+    }
+
+    #gradient-line {
+        width: 275px;
+        height: 2px;
+        background: linear-gradient(to right, #76c0d3, #3296c4, #004cd8);
+        margin: 20px;
+    }
+    
+    #services-div h4 {
+        color: #ffffff;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    /* FOOTER */
+
+    #rights {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        height: 70px;
+    }
+    
+    #rights h1 {
+        font-size: 8px;
+        background-image: linear-gradient(to right, #9aceff, #70a2ff, #2471ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
 }
 
 
@@ -1007,91 +1097,3 @@ h3::after {
 
 
 
-
-#rights {
-    display: flex;
-    text-align: center;
-    width: 100%;
-    height: 50px;
-    padding: 0;
-    margin-top: 30px;
-}
-
-#rights h1 {
-    font-size: 12px;
-    background-image: linear-gradient(to right, #9aceff, #70a2ff, #2471ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.footer-home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin-top: 40px;
-}
-
-.footer-home img {
-    width: 80%;
-    padding-left: 40px;
-}
-
-.footer-h1 {
-    display: flex;
-    text-align: center;
-    text-justify: center;
-    color: #ffffff;
-    width: 100%;
-    height: 350px;
-    font-size: 17px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.gradient-line {
-    width: 350px;
-    height: 2px;
-    background: linear-gradient(to right, #76c0d3, #3296c4, #004cd8);
-    margin: 15px;
-}
-
-.footer-div h4 {
-    color: #ffffff;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-
-.footer-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-}
-
-#div-projects:hover {
-    transform: none;
-}
-
-#div-projects-site:hover {
-    transform: none;
-}
-
-#voltar {
-    color: #ffffff;
-    font-size: 40px;
-    cursor: pointer;
-    display: none;
-    position: fixed;
-    bottom: 35px;
-    right: 25px;
-}
-
-}

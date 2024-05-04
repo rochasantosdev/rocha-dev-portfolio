@@ -194,26 +194,31 @@ elements1.forEach((element) => myObserver.observe(element))
 
 /* VOLTAR AO TOPO */
 
+
 const voltar = document.getElementById("to-go-back");
 
-    window.addEventListener("scroll", function () {
-        const scrollTop = document.documentElement.scrollTop;
+window.addEventListener("scroll", function () {
+    const scrollTop = document.documentElement.scrollTop;
 
-        if (scrollTop > 1000) {
-            voltar.style.display = "block";
-        } else {
-            voltar.style.display = "none";
-        }
+    // Define o ponto de interseção para desktop e mobile
+    let intersectionPoint = window.innerWidth >= 600 ? 1300 : 2200;
+
+    if (scrollTop > intersectionPoint) {
+        voltar.style.display = "block";
+    } else {
+        voltar.style.display = "none";
+    }
+});
+
+voltar.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
     });
+});
 
-    voltar.addEventListener("click", function (e) {
-        e.preventDefault();
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    });
 
 
 
