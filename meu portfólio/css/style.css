@@ -178,7 +178,7 @@ header.scrolled #button span {
 }
 
 .profile-name h3 {
-    font-size: 35px;
+    font-size: 32px;
     color: #828282;
     font-weight: 600;
     margin-bottom: 30px;
@@ -238,7 +238,8 @@ h3::after {
     color: #ffffff;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    margin-top: 30px;
 }
 
 .about p {
@@ -264,7 +265,8 @@ h3::after {
     color: #ffffff;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    margin-top: 30px;
 }
 
 .skills {
@@ -321,6 +323,7 @@ h3::after {
     color: #ffffff;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
+    margin-top: 30px;
 }
 
 #name-projects-flex {
@@ -476,6 +479,20 @@ h3::after {
     font-family: 'DM Sans', sans-serif;
 }
 
+/* CAIXA MOBILE */
+
+#div-projects-mobile {
+    display: none;
+}
+
+#div-projects-mobile-site {
+    display: none;
+}
+
+#caixa-mobile {
+    display: none;
+}
+
 /* SERVIÇOES */
 
 #services {
@@ -540,7 +557,7 @@ h3::after {
     align-items: flex-end;
     justify-content: center;
     width: 100%;
-    height: 80px;
+    height: 100px;
 }
 
 #rights h1 {
@@ -587,8 +604,9 @@ h3::after {
 
 @media screen and (max-width: 600px) {
 
-    html,body {
-        width:100%;
+    html,
+    body {
+        width: 100%;
         height: 100vh;
         background-color: #13131F;
         scroll-behavior: smooth;
@@ -772,10 +790,6 @@ h3::after {
         margin-bottom: 30px;
     }
 
-    /* PROJETOS */
-
-
-
     /* SCROLL ANIMAÇÃO */
 
     .hidden {
@@ -784,7 +798,7 @@ h3::after {
         transform: translateY(40px);
         transition: all 2s ease-in-out;
     }
-    
+
     .show {
         opacity: 1;
         filter: blur(0);
@@ -792,22 +806,170 @@ h3::after {
         transition: all 2s ease-in-out;
     }
 
+    /* PROJETOS CAIXA 1 MOBILE */
 
 
-
-
-
-
-
-
-
-
-
-
-
-    #projetos {
+    #name-projects-box {
         display: none;
     }
+
+    #caixa-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+    }
+
+    #mobile-h1 {
+        font-size: 40px;
+        color: #ffffff;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+    }
+
+    #div-projects-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #projects-services-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 500;
+        color: #fff;
+        width: 300px;
+        height: 200px;
+        border-radius: 15px 15px 0 0;
+        z-index: 0;
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(to right, #8be7ff, #2eb8f8, #004cd8);
+        border-image-slice: 1;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        background-image: url('/Users/DIL-BLACK/Documents/portfólio/rocha-dev-portfolio/meu portfólio/img/super-mario.png');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    #projects-information-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #212121;
+        width: 300px;
+        height: 60px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    #projects-information-mobile h1 {
+        font-size: 20px;
+        color: aliceblue;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+    }
+
+    #button3 {
+        padding: 8px 12px;
+        background-color: #24abfa;
+        color: #fff;
+        border-radius: 1rem;
+        border: none;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 400;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    /* PROJETOS CAIXA 2 MOBILE */
+
+    #div-projects-mobile-site {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #projects-services-mobile-site {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 500;
+        color: #fff;
+        width: 300px;
+        height: 200px;
+        border-radius: 15px 15px 0 0;
+        z-index: 0;
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(to right, #8be7ff, #2eb8f8, #004cd8);
+        border-image-slice: 1;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        background-image: url('/Users/DIL-BLACK/Documents/portfólio/rocha-dev-portfolio/meu portfólio/img/site-barbearia.png');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    #projects-information-mobile-site {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #212121;
+        width: 300px;
+        height: 60px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    #projects-information-mobile-site h1 {
+        font-size: 20px;
+        color: aliceblue;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+    }
+
+    #button4 {
+        padding: 8px 12px;
+        background-color: #24abfa;
+        color: #fff;
+        border-radius: 1rem;
+        border: none;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 400;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     #services {
         display: none;
@@ -845,129 +1007,6 @@ h3::after {
 
 
 
-#name-projects {
-    font-size: 40px;
-    color: #ffffff;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    width: 100%;
-    margin-bottom: 25px;
-}
-
-#name-projects-flex {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-}
-
-#name-projects-box {
-    display: flex;
-    text-align: center;
-    width: 100%;
-    height: 800px;
-}
-
-#div-projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 350px;
-    background-color: transparent;
-    transition: 0.3s;
-    padding: 0;
-    margin: 0;
-}
-
-#div-projects-site {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 350px;
-    background-color: transparent;
-    transition: 0.3s;
-    padding: 0;
-    margin: 0;
-}
-
-#projects-services {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    font-weight: 500;
-    color: #fff;
-    width: 350px;
-    height: 250px;
-    border-radius: 15px 15px 0 0;
-    z-index: 0;
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to right, #8be7ff, #2eb8f8, #004cd8);
-    border-image-slice: 1;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    background-image: url('/Users/DIL-BLACK/Documents/portfólio/rocha-dev-portfolio/meu portfólio/img/site-barbearia.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 1;
-}
-
-
-#projects-information {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-    background-color: #212121;
-    width: 350px;
-    height: 60px;
-    top: -20%;
-    transition: 0.7s;
-    border-radius: 0 0 15px 15px;
-    opacity: 0;
-}
-
-#projects-services-site {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    font-weight: 500;
-    color: #fff;
-    width: 350px;
-    height: 250px;
-    border-radius: 15px 15px 0 0;
-    z-index: 0;
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to right, #8be7ff, #2eb8f8, #004cd8);
-    border-image-slice: 1;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    background-image: url('/Users/DIL-BLACK/Documents/portfólio/rocha-dev-portfolio/meu portfólio/img/site-barbearia.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 1;
-}
-
-#projects-information-site {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-    background-color: #212121;
-    width: 350px;
-    height: 60px;
-    top: -20%;
-    transition: 0.7s;
-    border-radius: 0 0 15px 15px;
-    opacity: 0;
-}
 
 #rights {
     display: flex;

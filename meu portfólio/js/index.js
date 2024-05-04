@@ -91,7 +91,7 @@ setTimeout(() => {
 const projectsServices = document.getElementById("projetos");
 const projectsInformation = document.getElementById("projects-information");
 const button1 = document.getElementById("button1");
-const divProjects = document.getElementById("div-projects");
+const divProjects = document.getElementById("projetos");
 
 
 
@@ -137,7 +137,7 @@ divProjects.addEventListener('mouseout', function () {
 const projectsServicesSite = document.getElementById("projetos");
 const projectsInformationSite = document.getElementById("projects-information-site");
 const button2 = document.getElementById("button2");
-const divProjectsSite = document.getElementById("div-projects-site");
+const divProjectsSite = document.getElementById("projetos");
 
 
 projectsServicesSite.addEventListener('mouseover', function () {
