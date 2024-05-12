@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/91c335b2c5.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/code-alt.png" type="image/png" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/index.js" defer></script>
@@ -27,18 +28,25 @@
             </button>
         </div>
 
+        <div class="logo-site">
+
+        <i class="fa-solid fa-code"></i>
+        <p class="logo-name-site">Rocha Dev</p>
+
+        </div>
+
         <div class="menu-lista">
             <a class="link-menu-lista" href="#início">Início</a>
             <a class="link-menu-lista" href="#sobre">Sobre</a>
             <a class="link-menu-lista" href="#habilidades">Habilidades</a>
-            <a class="link-menu-lista" href="#projetos">Projetos</a>
+            <a class="link-menu-lista" href="#container">Projetos</a>
             <a class="link-menu-lista" href="#services">Serviços</a>
         </div>
 
         <div class="menu-lista-header">
-            <a class="link-menu-lista" href="#habilidades">Habilidades</a>
-            <a class="link-menu-lista" href="#projetos">Projetos</a>
-            <a class="link-menu-lista" href="#services">Serviços</a>
+            <a class="link-menu-lista-header" href="#habilidades">Habilidades</a>
+            <a class="link-menu-lista-header" href="#projetos">Projetos</a>
+            <a class="link-menu-lista-header" href="#services">Serviços</a>
         </div>
 
     </header>
@@ -66,7 +74,7 @@
         <section class="hidden" id="sobre"> <!-- SEÇÃO SOBRE -->
 
             <div class="about">
-                <h1>Sobre mim</h1>
+                <h1 class="name-h1">Sobre mim</h1>
                 <p>Sou um desenvolvedor front-end, com habilidades em Html, Css, Javascript, React, Typescript, Figma,
                     Bootstrap, Git e Talwind Css. Sou extremamente motivado, estou em constante aprendizado, em busca de
                     conhecimento. Trabalho como freelance na área de programação, na criação de sites e landing pages.
@@ -81,7 +89,7 @@
 
             <div class="my-skills">
 
-                <h1 class="skills-h1">Habilidades</h1>
+                <h1 class="name-h1">Habilidades</h1>
 
                 <div class="skills">
 
@@ -142,113 +150,92 @@
 
         </section>
 
+        <section class="hidden" id="projetos"> <!-- PROJETOS -->
 
-        <section class="hidden" id="projetos"> <!-- SEÇÃO PROJETOS -->
+            <h1 class="name-h1">Projetos</h1>
 
-            <div id="name-projects-box">
+            <div class="container-box">
 
-                <h1 id="name-projects">Projetos</h1>
+                <div class="container-caixa">
 
-                <div id="name-projects-flex">
-
-                    <div id="div-projects">
-
-                        <div id="projects-services">
-
-                        </div>
-
-                        <div id="projects-information">
-
-                            <h1>SUPER MARIO</h1>
-                            <a href="https://github.com/rochasantosdev">
-                                <button id="button1">Acessar</button>
-                            </a>
-
-                        </div>
+                    <div class="img-port">
 
                     </div>
 
-                    <div id="div-projects-site">
-
-                        <div id="projects-services-site">
-
-                        </div>
-
-                        <div id="projects-information-site">
-
-                            <h1>BARBEARIA</h1>
-                            <a href="https://github.com/rochasantosdev">
-                                <button id="button2">Acessar</button>
-                            </a>
-
-                        </div>
-
-                    </div>
+                    <a href="https://leokattah.com.br/" class="btn" target="_blank">Vê Site Online<i
+                            class="bi bi-arrow-right-circle"></i></a>
 
                 </div>
 
-            </div>
+                <div class="container-caixa">
 
-            <div id="caixa-mobile"> <!-- CAIXA MOBILE -->
-
-                <h1 id="mobile-h1">Projetos</h1>
-
-                <div id="div-projects-mobile">
-
-                    <div id="projects-services-mobile">
+                    <div class="img-port">
 
                     </div>
 
-                    <div id="projects-information-mobile">
-
-                        <h1>SUPER MARIO</h1>
-                        <a href="https://github.com/rochasantosdev">
-                            <button id="button3">ACESSAR</button>
-                        </a>
-
-                    </div>
+                    <a href="https://www.clsweb.com.br/" class="btn" target="_blank">Vê Site Online<i
+                            class="bi bi-arrow-right-circle"></i></a>
 
                 </div>
 
-                <div id="div-projects-mobile-site">
+                <div class="container-caixa">
 
-                    <div id="projects-services-mobile-site">
-
-                    </div>
-
-                    <div id="projects-information-mobile-site">
-
-                        <h1>BARBEARIA</h1>
-                        <a href="https://github.com/rochasantosdev">
-                            <button id="button4">ACESSAR</button>
-                        </a>
+                    <div class="img-port">
 
                     </div>
+
+                    <a href="https://felipewebdesigner.reveladigital.com/" class="btn" target="_blank">Vê Site Online<i
+                            class="bi bi-arrow-right-circle"></i></a>
 
                 </div>
-
-            </div>
-
-            </div>
 
             </div>
 
         </section>
 
+        <div class="logos">
 
+            <div class="logos-slide">
+
+                <img src="img/img1.png">
+                <img src="img/img2.png">
+                <img src="img/img3.png">
+                <img src="img/img4.png">
+                <img src="img/img5.png">
+                <img src="img/img6.png">
+                <img src="img/img7.png">
+                <img src="img/img8.png">
+                <img src="img/img9.png">
+
+            </div>
+
+            <div class="logos-slide">
+
+                <img src="img/img1.png">
+                <img src="img/img2.png">
+                <img src="img/img3.png">
+                <img src="img/img4.png">
+                <img src="img/img5.png">
+                <img src="img/img6.png">
+                <img src="img/img7.png">
+                <img src="img/img8.png">
+                <img src="img/img9.png">
+
+            </div>
+
+        </div>
 
         <section class="hidden" id="services"> <!-- SEÇÃO SERVICES -->
 
             <div id="services-caixa-home">
 
-                <h1>Ajudando empresas a construírem <span> produtos digitais </span> de forma moderna e de alta qualidade.
+                <h1>Ajudando empresas a construírem <span> produtos digitais </span> de forma moderna e de alta
+                    qualidade.
                 </h1>
 
             </div>
 
             <div id="services-home">
-
-                <img src="img/notebook.svg" alt="notbook" width="">
 
                 <div id="services-div">
 
@@ -260,11 +247,15 @@
 
                     <div id="gradient-line"></div>
 
-                    <h4>ATENDEMOS 24 HORAS</h4>
+                    <h4>SITE NO AR EM 7 DIAS</h4>
 
                     <div id="gradient-line"></div>
 
-                    <h4>EM ATÉ 7 DIAS SEU SITE ESTARÁ NO AR</h4>
+                    <h4>HOSPEDAGEM GRATUITA</h4>
+
+                    <div id="gradient-line"></div>
+
+                     <h4>ATENDEMOS 24 HORAS</h4>
 
                     <div id="gradient-line"></div>
 
@@ -274,7 +265,7 @@
 
         </section>
 
-        <div id="rights"> <!-- FOOTER -->
+        <div class="footer"> <!-- FOOTER -->
 
             <h1>Desenvolvido por Rocha Santos | 2024 todos os direitos reservados</h1>
 

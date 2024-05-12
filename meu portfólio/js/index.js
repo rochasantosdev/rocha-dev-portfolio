@@ -8,6 +8,7 @@ button.addEventListener('click', function () {
     button.classList.toggle("active")
 });
 
+
 /* FUNÇÃO MUDA COR DO MENU */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -84,97 +85,6 @@ setTimeout(() => {
 }, 2500);
 
 
-/* FUNÇÃO PROJETOS DIV QUE SE ABRE */
-
-/* CAIXA 1 */
-
-const projectsServices = document.getElementById("projetos");
-const projectsInformation = document.getElementById("projects-information");
-const button1 = document.getElementById("button1");
-const divProjects = document.getElementById("projetos");
-
-
-
-projectsServices.addEventListener('mouseover', function () {
-    projectsInformation.style.top = "0px";
-    projectsInformation.style.opacity = "1";
-});
-
-
-projectsInformation.addEventListener('mouseover', function () {
-    projectsInformation.style.top = "0px";
-    projectsInformation.style.opacity = "1";
-});
-
-divProjects.addEventListener('mouseover', function () {
-    button1.style.transform = "scale(1.3)";
-    button1.style.transition = "all 2s ease-in-out";
-    button1.style.backgroundColor = "#24abfa";
-});
-
-projectsInformation.addEventListener('mouseout', function () {
-    projectsInformation.style.top = "-25%";
-    projectsInformation.style.opacity = "0";
-});
-
-
-projectsServices.addEventListener('mouseout', function () {
-    projectsInformation.style.top = "-25%";
-    projectsInformation.style.opacity = "1";
-});
-
-
-divProjects.addEventListener('mouseout', function () {
-    button1.style.transition = "none";
-    button1.style.transform = "none";
-    button1.style.backgroundColor = "transparent";
-});
-
-
-/* CAIXA 2 */
-
-
-const projectsServicesSite = document.getElementById("projetos");
-const projectsInformationSite = document.getElementById("projects-information-site");
-const button2 = document.getElementById("button2");
-const divProjectsSite = document.getElementById("projetos");
-
-
-projectsServicesSite.addEventListener('mouseover', function () {
-    projectsInformationSite.style.top = "0px";
-    projectsInformationSite.style.opacity = "1";
-});
-
-
-projectsInformationSite.addEventListener('mouseover', function () {
-    projectsInformationSite.style.top = "0px";
-    projectsInformationSite.style.opacity = "1";
-});
-
-divProjectsSite.addEventListener('mouseover', function () {
-    button2.style.transform = "scale(1.3)";
-    button2.style.transition = "all 2s ease-in-out";
-    button2.style.backgroundColor = "#24abfa";
-});
-
-projectsInformationSite.addEventListener('mouseout', function () {
-    projectsInformationSite.style.top = "-25%";
-    projectsInformationSite.style.opacity = "0";
-});
-
-
-projectsServicesSite.addEventListener('mouseout', function () {
-    projectsInformationSite.style.top = "-25%";
-    projectsInformationSite.style.opacity = "1";
-});
-
-divProjectsSite.addEventListener('mouseout', function () {
-    button2.style.transition = "none";
-    button2.style.transform = "none";
-    button2.style.backgroundColor = "transparent";
-});
-
-
 /* SCROLL 1 */
 
 const myObserver = new IntersectionObserver((entries) => {
@@ -231,10 +141,4 @@ voltar.addEventListener("click", function (e) {
 
 
 
-/* RESPONSIVIDADE */
 
-/* MENU HAMBURGUER */
-
-/* PROJETO MARIO BROS */
-
-/* PROJETO BARBEARIA */
