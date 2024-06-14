@@ -85,7 +85,7 @@ setTimeout(() => {
 }, 2500);
 
 
-/* SCROLL 1 */
+/* SCROLL EFEITO ACONTECENDO MAIS DE UMA VEZ 
 
 const myObserver = new IntersectionObserver((entries) => {
     entries.forEach( (entry) => {
@@ -99,7 +99,23 @@ const myObserver = new IntersectionObserver((entries) => {
 
 const elements1 = document.querySelectorAll('.hidden')
 
-elements1.forEach((element) => myObserver.observe(element))
+elements1.forEach((element) => myObserver.observe(element)) */
+
+/* SCROLL EFEITO ACONTECENDO SOMENTE UMA VEZ */
+
+ const myObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); 
+        }
+    });
+});
+
+const elements1 = document.querySelectorAll('.hidden');
+
+elements1.forEach((element) => myObserver.observe(element)); 
+
 
 
 /* VOLTAR AO TOPO */
@@ -110,8 +126,7 @@ const voltar = document.getElementById("to-go-back");
 window.addEventListener("scroll", function () {
     const scrollTop = document.documentElement.scrollTop;
 
-    // Define o ponto de interseção para desktop e mobile
-    let intersectionPoint = window.innerWidth >= 600 ? 1300 : 2200;
+    let intersectionPoint = window.innerWidth >= 600 ? 1300 : 3500;
 
     if (scrollTop > intersectionPoint) {
         voltar.style.display = "block";
